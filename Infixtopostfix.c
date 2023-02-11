@@ -1,4 +1,3 @@
-
 // Infix to postfix expression
 #include <ctype.h>
 #include <stdio.h>
