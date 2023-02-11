@@ -148,8 +148,7 @@ default:printf("Wrong choice\n");
 }
 }
 void stackdemo(){
-// STACK IS NOT ONLY INSERT FRONT AND DELETE FRONT ITS ALSO INSERT REAR 
-// AND DELETE REAR
+// STACK IS NOT ONLY INSERT FRONT AND DELETE FRONT ITS ALSO INSERT REAR AND DELETE REAR
 // IF YOU WANT INSETR FORNT AND DELETE FRONT APPLY YOURSELVES
 printf("=======stack demo =======\n");
 int ch,n,i;
@@ -159,7 +158,7 @@ printf("--------Stack of Professors using DLL--------\n");
 printf("1.CREATE DLL stack of n professors\n");
 printf("2.DISPLAY the stack of professors\n");
 printf("3.INSERT END\n");
-printf("4.DELETE FRONT\n");
+printf("4.DELETE END\n");
 printf("5.EXIT\n");
 printf("\nEnter choice:\n");
 scanf("%d",&ch);
@@ -198,3 +197,4 @@ queuedemo();
 }
 return 0;
 }
+
