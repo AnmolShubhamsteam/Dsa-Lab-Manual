@@ -1,3 +1,4 @@
+
 // 1. Singly Linked List (SLL) of Integer Data
 // a. Create a SLL stack of N integer.
 // b. Display of SLL
