@@ -1,3 +1,8 @@
+// 1. Singly Linked List (SLL) of Integer Data
+// a. Create a SLL stack of N integer.
+// b. Display of SLL
+// c. Linear search. Create a SLL queue of N Students Data Concatenation of two SLL of
+// integers.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
