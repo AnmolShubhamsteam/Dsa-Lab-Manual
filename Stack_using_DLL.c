@@ -1,3 +1,4 @@
+// Stacks using DLL reffer professor.c for main lab program
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
