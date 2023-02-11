@@ -1,3 +1,4 @@
+// Demonstartion of Queue using DLL main program is named as Professor.c
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
