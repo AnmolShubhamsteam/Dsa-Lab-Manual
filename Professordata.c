@@ -1,3 +1,10 @@
+// 4. Design, Develop and Implement a menu driven Program in C for the following operations 
+// on Doubly Linked List (DLL) of Professor Data with the fields: ID, Name, Branch, Area of
+// Specialization
+// a. Create a DLL stack of N Professor’s Data.
+// Display the status of DLL and count the number of nodes in it.
+// b. Create a DLL queue of N Professor’s Data
+// Display the status of DLL and count the number of nodes in it.
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
