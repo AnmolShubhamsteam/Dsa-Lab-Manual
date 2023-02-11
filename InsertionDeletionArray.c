@@ -6,30 +6,69 @@
 // c. Display of Array Elements
 // d. Exit.
 // Support the program with functions for each of the above operations.
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 int a[20];
-int n,val,i,pos;
-/*Function Prototype*/
-void create();
-void display();
-void insert();
-void delete();
-int main()
+int n = 0;
+void create()
 {
-int choice=1;
-while(choice)
+printf("Enter the size of the array: ");
+scanf("%d", &n);
+printf("Enter the elements for the array:\n");
+for (int i = 0; i < n; i++)
 {
-printf("\n\n--------MENU-----------\n");
-printf("1.CREATE\n");
-printf("2.DISPLAY\n");
-printf("3.INSERT\n");
-printf("4.DELETE\n");
-printf("5.EXIT\n");
-printf("-----------------------");
-printf("\nENTER YOUR CHOICE:\t");
-scanf("%d",&choice);
-switch(choice)
+scanf("%d", &a[i]);
+}
+}
+void display()
+{
+printf("The array elements are:\n");
+for (int i = 0; i < n; i++)
+{
+printf("%d\n ", a[i]);
+}
+}
+void insert()
+{
+int pos, value;
+printf("Enter the index position for the new element: ");
+scanf("%d", &pos);
+printf("Enter the element to be inserted : ");
+scanf("%d", &value);
+for (int i = n - 1; i >= pos; i--)
+{
+a[i + 1] = a[i];
+}
+a[pos] = value;
+n = n + 1;
+}
+void delete()
+{
+int pos, value;
+printf("Enter the index position of the element to be deleted: ");
+scanf("%d", &pos);
+value = a[pos];
+for (int i = pos + 1; i < n; i++)
+{
+a[i - 1] = a[i];
+}
+n = n - 1;
+printf("The deleted element is = %d\n", value);
+}
+void main()
+{
+int choice;
+while (1)
+{
+printf("A program to perform array operation\n");
+printf("1. Create\n");
+printf("2. Display\n");
+printf("3. Insert\n");
+printf("4. Delete\n");
+printf("5. Exit\n");
+printf("Enter your choice: \n");
+scanf("%d", &choice);
+switch (choice)
 {
 case 1:
 create();
@@ -41,69 +80,11 @@ case 3:
 insert();
 break;
 case 4:
-delete();
+delete ();
 break;
-case 5:
-exit(0);
+case 5: exit(0);
 default:
-printf("\nInvalid choice:\n");
-break;
+printf("Invalid choice\n");
 }
-}
-return 0;
-}
-//creating an array
-void create()
-{
-printf("\nEnter the size of the array elements:\t");
-scanf("%d",&n);
-printf("\nEnter the elements for the array:\n");
-for (int i=0; i<n; i++)
-{
-    scanf("%d",&a[i]);
-}
-}
-void display()
-{
-int i;
-printf("\nThe array elements are :\n");
-for(i=0;i<n;i++)
-{
-printf("%d\t",a[i]);
-}
-}
-void insert()
-{
-printf("\nEnter the position for the new element:\t");
-scanf("%d",&pos);
-printf("\nEnter the element to be inserted :\t");
-scanf("%d",&val);
-if(pos>=n||pos<0){
-printf("Invalid position\n");
-}
-else{
-for(i=n-1;i>=pos;i--)
-{
-a[i+1]=a[i];
-}
-a[pos]=val;
-n=n+1;
-}
-}
-void delete()
-{
-printf("\nEnter the position of the element to be deleted:\t");
-scanf("%d",&pos);
-if(pos>=n||pos<0){
-printf("Invalid position\n");
-}
-else{
-    val=a[pos];
-    for (int i=pos;i <n-1;i++)
-    {
-        a[i]=a[i+1];
-    }
-    n=n-1;
-    printf("\nThe deleted element is =%d",val);
 }
 }
