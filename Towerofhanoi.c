@@ -1,6 +1,7 @@
 
 // Solving Tower of Hanoi problem with n disks
 #include<stdio.h>
+#include<math.h>
 void tower(int n, int source, int temp,int destination)
 {
 if(n == 0)
