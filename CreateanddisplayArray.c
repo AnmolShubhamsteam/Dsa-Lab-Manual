@@ -8,49 +8,44 @@
 #include<stdio.h>
 #include<stdlib.h>
 int a[20];
-int n,val,i,pos;
+int n = 0;
 void create()
 {
-printf("\nEnter the size of the array elements:\t");
-scanf("%d",&n);
-printf("\nEnter the elements for the array:\n");
-for (int i=0; i<n; i++)
-{
-    scanf("%d",&a[i]);
-}
+ printf("Enter the size of the array: ");
+ scanf("%d", &n);
+ printf("Enter the elements for the array:\n");
+ for(int i=0; i<n; i++)
+ {
+ scanf("%d",&a[i]);
+ }
 }
 void display()
 {
-int i;
-printf("\nThe array elements are :\n");
-for(i=0;i<n;i++)
-{
-printf("%d\t",a[i]);
-}
+ printf("The array elements are:\n");
+ for(int i=0; i<n; i++)
+ {
+ printf("%d\n ",a[i]);
+ }
 }
 int main()
 {
-int choice=1;
-while(choice)
+int choice;
+while(1)
 {
-printf("\n\n--------MENU-----------\n");
-printf("1.CREATE\n");
-printf("2.DISPLAY\n");
-printf("3.EXIT\n");
-scanf("%d",&choice);
+printf("A program to perform array operation\n");
+printf("1. Create\n");
+printf("2. Display\n");
+printf("3. Exit\n");
+printf("Enter your choice: \n");
+scanf("%d", &choice);
 switch(choice)
 {
-case 1:
-create();
+case 1: create();
 break;
-case 2:
-display();
+case 2: display();
 break;
-case 3:
-exit(0);
-default:
-printf("\nInvalid choice:\n");
+case 3: exit (0);
+default: printf("Invalid choice\n");
 }
 }
-return 0;
 }
