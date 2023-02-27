@@ -1,4 +1,7 @@
-
+// 2. Design, Develop and Implement a menu driven Program in C for the following operations 
+// on Binary Search Tree (BST) of Integers
+// a. Create a BST of N Integers.
+// b. Traverse the BST in In-order, Pre-order and Post-order.
 #include<stdlib.h>
 #include<stdio.h>
 struct node
