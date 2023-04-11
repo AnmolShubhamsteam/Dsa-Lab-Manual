@@ -1,4 +1,5 @@
 // Method 2(A space efficient implementation)
+
 #include <stdio.h>
 #include <stdlib.h>
 
