@@ -12,6 +12,8 @@ int a[20];
 int n = 0;
 void create()
 {
+    //yuvrah cha......
+    //much bhi nhi hai
 printf("Enter the size of the array: ");
 scanf("%d", &n);
 printf("Enter the elements for the array:\n");
